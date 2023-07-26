@@ -1,0 +1,31 @@
+{
+  "name": "checkout-ui-extensions-app",
+  "version": "1.0.0",
+  "main": "web/index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "shopify": "shopify",
+    "build": "shopify app build",
+    "dev": "shopify app dev",
+    "info": "shopify app info",
+    "generate": "shopify app generate",
+    "deploy": "shopify app deploy"
+  },
+  "dependencies": {
+    "@remix-run/router": "^1.6.3",
+    "@shopify/app": "3.46.5",
+    "@shopify/cli": "3.46.5",
+    "@shopify/polaris-icons": "^7.1.0",
+    "dom-helpers": "^5.2.1",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-router": "^6.13.0"
+  },
+  "author": "yudaikato",
+  "private": true,
+  "workspaces": [
+    "web",
+    "web/frontend",
+    "extensions/*"
+  ]
+}
